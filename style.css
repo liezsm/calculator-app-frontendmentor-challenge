@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+/* resets */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* root * variables */
+:root {
+  /*  -for theme 1  */
+  --darkDesaturatedBlueBG: hsl(222, 26%, 31%); /*-main bg */
+  --keypadBGdarkDesaturatedBlue: hsl(223, 31%, 20%); /*-toggle, keypad bg */
+  --screenBGdarkDesaturated: hsl(224, 36%, 15%); /*-screen bg */
+
+  --keyBG1: hsl(225, 21%, 49%); /*-key bg */
+  --keyShadow1: hsl(224, 28%, 35%); /* -key shadow */
+
+  --red: hsl(6, 63%, 50%); /* - equal bg */
+  --darkRed: hsl(6, 70%, 34%); /* -equals key shadow */
+
+  --lightgrayishorange: hsl(30, 25%, 89%); /* -numbers bg */
+  --grayishOrange: hsl(28, 16%, 65%); /* -numbers key shadow */
+
+  --verydarkrgrayishblue: hsl(221, 14%, 31%); /* -numberstext*/
+  --white: hsl(0, 0, 100%); /* -del rset text */
+
+  /* -for theme 2 */
+
+  --lightGray: hsl(0, 0%, 90%); /*-main bg */
+  --grayishRed: hsl(0, 5%, 81%); /*-toggle, keypad bg */
+  --veryLightGray: hsl(0, 0%, 93%); /*-screen bg */
+
+  --darkCyan: hsl(185, 42%, 37%); /*-key bg */
+  --veryDarkCyan: hsl(185, 58%, 25%); /* -key shadow */
+
+  --orange: hsl(25, 98%, 40%);
+  --darkOrange: hsl(25, 99%, 27%);
+
+  --lightGrayishYellow: hsl(45, 7%, 89%);
+  --darkGrayishOrange: hsl(35, 11%, 61%);
+
+  --veryDarkYellow: hsl(60, 10%, 19%);
+  /* -white */
+
+  /* -theme 3 */
+
+  --veryDarkViolet: hsl(268, 75%, 9%);
+  --darkViolet: hsl(268, 71%, 12%);
+
+  --keyBGDarkViiolet: hsl(281, 89%, 26%);
+  --magenta: hsl(285, 91%, 52%);
+  --pureCyan: hsl(176, 100%, 44%);
+  --softCyan: hsl(177, 92%, 70%);
+  --darkyViolet: hsl(268, 47%, 21%);
+  --darkMagenta: hsl(290, 70%, 36%);
+
+  --lightYellow: hsl(52, 100%, 62%);
+  --veryDarkBlue: hsl(198, 20%, 13%);
+  /* -white */
+
+  /* - */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--darkDesaturatedBlueBG); */
+  font-size: 2rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+}
+
+/* -calc */
+
+.calc-container {
+  /* border: 2px solid magenta; */
+  width: 90vw;
+  height: 90vh;
+}
+.calc-container > * {
+  /* border: 2px solid red; */
+  border-radius: 9px;
+}
+.calc-container > *:not(:first-child) {
+  margin-top: 1.5625rem;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.theme-switcher h1 {
+  font-size: 2rem;
+}
+
+.theme-switcher .theme-container {
+  display: flex;
+  align-items: flex-end;
+}
+.theme-text {
+  font-size: 0.8125rem;
+  margin-bottom: 0.3rem;
+}
+
+.toggle-container {
+  /* border: 2px solid magenta; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  text-align: center;
+  width: 80px;
+}
+
+.toggle-nos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid magenta; */
+  margin-bottom: 5px;
+}
+.toggle-container small {
+  font-size: 0.8125rem;
+  display: inline;
+}
+/* #togglebtn {
+  background-color: var(--keypadBGdarkDesaturatedBlue);
+  display: flex;
+  overflow: hidden;
+  border: 2px solid magenta;
+}
+#togglebtn input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 30px;
+  width: 30px;
+  border: 0;
+  overflow: hidden;
+} */
+/* 
+#toggle-circle {
+  display: block;
+  height: 90%;
+  width: 20px;
+  background-color: var(--red);
+  clip-path: circle();
+} */
+
+.toggle-field {
+  display: flex;
+  /* margin-bottom: 36px; */
+  overflow: hidden;
+  background-color: var(--keypadBGdarkDesaturatedBlue);
+  border-radius: 12px;
+  width: 80px;
+  height: 30px;
+  padding-left: 5px;
+  /* border: 2px solid yellow; */
+}
+.toggle-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  /* border: 2px solid magenta; */
+  overflow: hidden;
+  /* opacity: 0; */
+}
+
+.toggle-field label {
+  /* background-color: white; */
+  /* /* color: rgba(0, 0, 0, 0.6); */
+  /* font-size: 14px; */
+  /* line-height: 1; */
+  text-align: center;
+  padding: 10px 12px;
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1); */
+  transition: all 0.1s ease-in-out;
+}
+
+.toggle-field label:hover {
+  cursor: pointer;
+}
+
+.toggle-field input:checked + label {
+  background-color: var(--red);
+  clip-path: circle();
+  box-shadow: none;
+}
+
+.toggle-field label:first-of-type {
+  /* border-radius: 4px 0 0 4px; */
+}
+
+.toggle-field label:last-of-type {
+  /* border-radius: 0 4px 4px 0; */
+}
+
+.output-display {
+  height: 5.375rem;
+  background-color: var(--screenBGdarkDesaturated);
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  /* columns: var(--white); */
+}
+
+.keys-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1.5625rem;
+  background-color: var(--keypadBGdarkDesaturatedBlue);
+}
+.keys-container button {
+  /* width: 3.75rem; */
+  height: 3.75rem;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+}
+
+.shadow-1 {
+  background-color: var(--lightgrayishorange);
+  box-shadow: 0px 5px 0px 0px var(--grayishOrange);
+  color: var(--verydarkrgrayishblue);
+  font-size: 1.6875rem;
+}
+#reset {
+  grid-column: 3/1;
+}
+#equals {
+  grid-column: 3/5;
+  background-color: var(--red);
+  box-shadow: 0px 5px 0px 0px var(--darkRed);
+  color: var(--lightgrayishorange);
+  font-size: 1.1875rem;
+  /* grid-row: 6/3; */
+}
+
+#del,
+#reset {
+  background-color: var(--keyBG1);
+  box-shadow: 0px 5px 0px 0px var(--keyShadow1);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1875rem;
+}

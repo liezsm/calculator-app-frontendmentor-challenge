@@ -1,0 +1,173 @@
+@mixin set-background-color($color) {
+  background-color: $color;
+}
+
+@mixin theme-1($theme: true) {
+  @if $theme {
+    // -lighten(color, perecentage kun unsa ka hayaga)
+    body {
+      background-color: var(--darkDesaturatedBlueBG);
+    }
+    .toggle-field {
+      background-color: var(--keypadBGdarkDesaturatedBlue);
+    }
+
+    label[for="radio-1"] {
+      clip-path: circle();
+      background-color: var(--red);
+    }
+
+    .output-display {
+      background-color: var(--screenBGdarkDesaturated);
+    }
+
+    .keys-container {
+      background-color: var(--keypadBGdarkDesaturatedBlue);
+    }
+    .keys:hover,
+    #del:hover,
+    #reset:hover,
+    #equals:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .shadow-1 {
+      background-color: var(--lightgrayishorange);
+      box-shadow: 0px 5px 0px 0px var(--grayishOrange);
+      color: var(--verydarkrgrayishblue);
+    }
+
+    #equals {
+      background-color: var(--red);
+      box-shadow: 0px 5px 0px 0px var(--darkRed);
+      color: var(--lightgrayishorange);
+    }
+
+    #del,
+    #reset {
+      background-color: var(--keyBG1);
+      box-shadow: 0px 5px 0px 0px var(--keyShadow1);
+      color: #fff;
+    }
+  }
+}
+
+@mixin theme-2($theme: true) {
+  @if $theme {
+    // -lighten(color, perecentage kun unsa ka hayaga)
+    // .theme-switcher,
+    // .output-display {
+    //   color: #000;
+    // }
+    .toggle-field {
+      background-color: var(--grayishRed);
+    }
+
+    label[for="radio-2"] {
+      background-color: var(--red);
+      clip-path: circle();
+    }
+
+    .output-display {
+      background-color: var(--veryLightGray);
+    }
+
+    .keys-container {
+      background-color: var(--grayishRed);
+    }
+
+    .keys:hover,
+    #del:hover,
+    #reset:hover,
+    #equals:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .shadow-1 {
+      background-color: var(--lightgrayishorange);
+      box-shadow: 0px 5px 0px 0px var(--grayishOrange);
+      color: var(--verydarkrgrayishblue);
+    }
+
+    #equals {
+      background-color: var(--orange);
+      box-shadow: 0px 5px 0px 0px var(--darkOrange);
+      color: var(--lightgrayishorange);
+    }
+
+    #del,
+    #reset {
+      background-color: var(--darkCyan);
+      box-shadow: 0px 5px 0px 0px var(--veryDarkCyan);
+      color: #fff;
+    }
+  }
+}
+
+@mixin theme-3($theme: true) {
+  @if $theme {
+    // -lighten(color, perecentage kun unsa ka hayaga)
+    // .theme-switcher,
+    // .output-display {
+    //   color: #000;
+    // }
+    .toggle-field {
+      background-color: var(--darkViolet);
+    }
+
+    label[for="radio-3"] {
+      background-color: var(--pureCyan);
+      clip-path: circle();
+    }
+
+    .output-display {
+      background-color: var(--darkViolet);
+    }
+
+    .keys-container {
+      background-color: var(--darkViolet);
+    }
+
+    .keys:hover,
+    #del:hover,
+    #reset:hover,
+    #equals:hover {
+      background-color: rgba(255, 255, 0, 0.2);
+    }
+
+    .shadow-1 {
+      background-color: var(--darkyViolet);
+      box-shadow: 0px 5px 0px 0px var(--darkMagenta);
+      color: var(--lightYellow);
+    }
+
+    #equals {
+      background-color: var(--pureCyan);
+      box-shadow: 0px 5px 0px 0px var(--softCyan);
+      color: var(--veryDarkBlue);
+    }
+
+    #del,
+    #reset {
+      background-color: var(--keyBGDarkViiolet);
+      box-shadow: 0px 5px 0px 0px var(--magenta);
+      color: #fff;
+    }
+
+    #equals,
+    #reset {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+// -media queries
+@mixin tablet($tablet, $tablet-max) {
+  @media (min-device-width: $tablet) and (max-device-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}

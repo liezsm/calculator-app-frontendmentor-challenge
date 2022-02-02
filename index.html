@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body class="bg-1 theme-1">
+
+  <main class="calc-container">
+
+    <div class="theme-switcher">
+      <h1>calc</h1>
+      <div class="theme-container">
+        <small class="theme-text">THEME</small>
+        <div class="toggle-container">
+          <div class="toggle-nos">
+
+            <small>1 </small>
+            <small>2 </small>
+            <small>3 </small>
+          </div>
+
+        <div class="toggle-field" id="toggle">
+          <input type="radio" id="radio-1" name="switch-two" value="1" checked />
+          <label for="radio-1"></label>
+          <input type="radio" id="radio-2" name="switch-two" value="2" />
+          <label for="radio-2"></label>
+          <input type="radio" id="radio-3" name="switch-two" value="3" />
+          <label for="radio-3"></label>
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="output-display">
+      <div id="prev"></div>
+      <div id="current"></div>
+    </div>
+
+    <div class="keys-container">
+      <button class="keys shadow-1"   data-type='number'>7</button>  
+      <button class="keys shadow-1"   data-type='number'>8</button>  
+      <button class="keys shadow-1"   data-type='number'>9</button>
+      <button class="keys" id="del"  >DEL</button>
+      <button class="keys shadow-1"   data-type='number'>4</button>
+      <button class="keys shadow-1"   data-type='number'>5</button>
+      <button class="keys shadow-1"   data-type='number'>6</button>
+      <button class="keys shadow-1"  data-type='operator'>+</button>
+      <button class="keys shadow-1"   data-type='number'>1</button>
+      <button class="keys shadow-1"   data-type='number'>2</button>
+      <button class="keys shadow-1"   data-type='number'>3</button>
+      <button class="keys shadow-1"  data-type='operator'>-</button>
+      <button class="keys shadow-1" id="dot" data-type='number'>.</button>
+      <button class="keys shadow-1"  data-type='number'>0</button>
+      <button class="keys shadow-1"  data-type='operator'>/</button>
+      <button class="keys shadow-1"  data-type='operator' >x</button>
+      <button class="keys" id="reset"  >Reset</button>
+      <button class="keys" id="equals"  data-operator-equals >=</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

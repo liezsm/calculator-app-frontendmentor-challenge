@@ -1,0 +1,58 @@
+:root {
+  /*  -for theme 1  */
+  --darkDesaturatedBlueBG: hsl(222, 26%, 31%); /*-main bg */
+  --keypadBGdarkDesaturatedBlue: hsl(223, 31%, 20%); /*-toggle, keypad bg */
+  --screenBGdarkDesaturated: hsl(224, 36%, 15%); /*-screen bg */
+
+  --keyBG1: hsl(225, 21%, 49%); /*-key bg */
+  --keyShadow1: hsl(224, 28%, 35%); /* -key shadow */
+
+  --red: hsl(6, 63%, 50%); /* - equal bg */
+  --darkRed: hsl(6, 70%, 34%); /* -equals key shadow */
+
+  --lightgrayishorange: hsl(30, 25%, 89%); /* -numbers bg */
+  --grayishOrange: hsl(28, 16%, 65%); /* -numbers key shadow */
+
+  --verydarkrgrayishblue: hsl(221, 14%, 31%); /* -numberstext*/
+  --white: hsl(0, 0, 100%); /* -del rset text */
+
+  /* -for theme 2 */
+
+  --lightGray: hsl(0, 0%, 90%); /*-main bg */
+  --grayishRed: hsl(0, 5%, 81%); /*-toggle, keypad bg */
+  --veryLightGray: hsl(0, 0%, 93%); /*-screen bg */
+
+  --darkCyan: hsl(185, 42%, 37%); /*-key bg */
+  --veryDarkCyan: hsl(185, 58%, 25%); /* -key shadow */
+
+  --orange: hsl(25, 98%, 40%);
+  --darkOrange: hsl(25, 99%, 27%);
+
+  --lightGrayishYellow: hsl(45, 7%, 89%);
+  --darkGrayishOrange: hsl(35, 11%, 61%);
+
+  --veryDarkYellow: hsl(60, 10%, 19%);
+  /* -white */
+
+  /* -theme 3 */
+
+  --veryDarkViolet: hsl(268, 75%, 9%);
+  --darkViolet: hsl(268, 71%, 12%);
+
+  --keyBGDarkViiolet: hsl(281, 89%, 26%);
+  --magenta: hsl(285, 91%, 52%);
+  --pureCyan: hsl(176, 100%, 44%);
+  --softCyan: hsl(177, 92%, 70%);
+  --darkyViolet: hsl(268, 47%, 21%);
+  --darkMagenta: hsl(290, 70%, 36%);
+
+  --lightYellow: hsl(52, 100%, 62%);
+  --veryDarkBlue: hsl(198, 20%, 13%);
+  /* -white */
+
+  /* - */
+}
+
+$desktop: 992px;
+$tablet: 800px;
+$tablet-max: 1280px;

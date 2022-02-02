@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+@import "resets";
+@import "variables";
+@import "config";
+@import "calc";
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.bg-1 {
+  background-color: var(--darkDesaturatedBlueBG);
+}
+
+.bg-2 {
+  background-color: var(--lightGray);
+  color: #000;
+  font-weight: 700;
+}
+.bg-3 {
+  background-color: var(--veryDarkViolet);
+  color: var(--lightYellow);
+  font-weight: 700;
+}
+
+.theme-1 {
+  @include theme-1(true);
+}
+
+.theme-2 {
+  @include theme-2(true);
+}
+
+.theme-3 {
+  @include theme-3(true);
+}

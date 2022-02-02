@@ -1,0 +1,11 @@
+@mixin tablet($tablet, $tablet-max) {
+  @media (min-device-width: $tablet) and (max-device-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin desktop($desktop) {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
