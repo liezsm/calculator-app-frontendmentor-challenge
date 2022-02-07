@@ -131,6 +131,13 @@
   padding: 1rem;
 }
 
+.keys:hover,
+#del:hover,
+#reset:hover,
+#equals:hover {
+  cursor: pointer;
+}
+
 .shadow-1 {
   font-size: 1.6875rem;
 

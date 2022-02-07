@@ -28,8 +28,14 @@
     #del:hover,
     #reset:hover,
     #equals:hover {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.8);
+      color: var(--keypadBGdarkDesaturatedBlue);
     }
+
+    #equals:hover {
+      background-color: var(--orange);
+    }
+
     .shadow-1 {
       background-color: var(--lightgrayishorange);
       box-shadow: 0px 5px 0px 0px var(--grayishOrange);

@@ -238,6 +238,13 @@
   padding: 1rem;
 }
 
+.keys:hover,
+#del:hover,
+#reset:hover,
+#equals:hover {
+  cursor: pointer;
+}
+
 .shadow-1 {
   font-size: 1.6875rem;
 }
@@ -329,7 +336,12 @@ body {
 .theme-1 #del:hover,
 .theme-1 #reset:hover,
 .theme-1 #equals:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--keypadBGdarkDesaturatedBlue);
+}
+
+.theme-1 #equals:hover {
+  background-color: var(--orange);
 }
 
 .theme-1 .shadow-1 {
